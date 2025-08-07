@@ -38,7 +38,7 @@ jobs:
           name: python-app
           path: |
             .
-            # !antenv/
+            !antenv/
             # Exclude the virtual environment directory to avoid uploading it if SCM build is turned on
 
   deploy:
@@ -70,4 +70,5 @@ jobs:
           clean: true
 
           
+
 
