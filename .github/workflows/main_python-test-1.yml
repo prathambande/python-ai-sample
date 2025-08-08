@@ -29,6 +29,9 @@ jobs:
           python -m venv antenv
           source antenv/bin/activate
           pip install -r requirements.txt
+          cd antenv
+          mkdir dir1
+          touch dir1/file1.txt
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
 
@@ -70,6 +73,7 @@ jobs:
           clean: true
 
           
+
 
 
 
