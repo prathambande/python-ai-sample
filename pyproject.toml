@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "A FastAPI application with LangChain integration"
 readme = "README.md"
 requires-python = ">=3.8"
-license = {text = "MIT"}
+license = "MIT"
 authors = [
     {name = "Your Name", email = "your.email@example.com"}
 ]
@@ -39,9 +39,3 @@ build-backend = "setuptools.build_meta"
 [project.urls]
 Homepage = "https://github.com/yourusername/django-ogf"
 Repository = "https://github.com/yourusername/django-ogf"
-
-[tool.setuptools]
-packages = ["myproject"]
-
-[tool.setuptools.package-data]
-myproject = ["*.py"]
