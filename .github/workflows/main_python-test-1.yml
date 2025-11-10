@@ -35,9 +35,10 @@ jobs:
 
       - name: Create and Start virtual environment and Install dependencies
         run: |
+          pip install poetry
           python -m venv antenv
           source antenv/bin/activate
-          pip install .
+          poetry install
 
 
       # If the `SCM_DO_BUILD_DURING_DEPLOYMENT` setting is enabled (set to true), the platform uses Oryx during deployment to build the application and install dependencies (for example, running `pip install`). Since the build happens on the platform, we exclude the antenv virtual environment folder from the deployment package. This helps reduce the size of the deployment artifact and avoids sending unnecessary files that will be recreated during the build process.
@@ -68,4 +69,5 @@ jobs:
         if: always()
         run: |
           az logout
+
 
